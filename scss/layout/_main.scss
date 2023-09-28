@@ -1,0 +1,87 @@
+main{
+    .portada{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+        img{
+            max-width: 100%;
+            height: auto;
+            
+            margin: 20px 20px;
+        }
+    }
+    .informacion{
+        max-width: 100%;
+        height: 100%;
+        background-color: black;
+
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        .info{
+            border: 3px solid lavender;
+            border-radius: 15px;
+            margin: 20px;
+            padding: 25px;
+            background-color:lavender;
+            cursor: pointer;
+            p{
+                text-align: center;
+                color: black;
+            }
+            &:hover{
+                background-color: #c7c7e9;
+                scale: 1.2;
+                transition: all 0.5s ease 0s;
+            }
+        }
+        
+    }
+    .grid-producto{
+        
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 20px;
+        margin: 30px;
+        a{
+            list-style: none;
+            text-decoration: none;
+            p{
+                color: black;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                &:hover{
+                    scale:1.7;
+                    transition: all 0.7s ease 0s;
+                }
+            }
+        }
+        .grid-item{
+            border-radius: 15px;
+            height: 480px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .emp{
+            background: linear-gradient(-45deg, #3498db, #e74c3c);
+            
+        }
+        .sub{
+            background: linear-gradient(45deg, #3498db, #e74c3c);
+        }
+        .reg{
+            background: linear-gradient(-135deg, #3498db, #e74c3c);
+        }
+        .age{
+            background: linear-gradient(135deg, #3498db, #e74c3c);
+        }
+    }
+}

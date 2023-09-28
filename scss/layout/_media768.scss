@@ -1,5 +1,18 @@
+ // Media query para hacerlo responsive
 @media screen and (max-width: 768px) {
     header{
-        flex-direction: column;    
+        flex-direction: column;
+        text-align: center;
+        nav{
+            padding: 10px 0px;
+        }
+    }
+    main{
+        .informacion{
+            .info{
+                margin: 10px;
+                padding: 15px;
+            }
+        }
     }
 }
