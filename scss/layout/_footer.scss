@@ -1,0 +1,98 @@
+footer{
+    background-color: blue;
+    .arriba{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            img{
+                width: 40px;
+            }
+            .logotipo{
+                font-size: 18px;
+                color: white;
+            }
+        }
+        .redes{
+            span{
+                font-size: 23px;
+                
+            }
+            .fb{
+                background-color: rgb(99, 144, 101);
+                padding: 7px;
+                border-radius: 50px;
+                color: white;
+            }
+            .ig{
+                background-color: rgb(99, 144, 101);
+                padding: 7px;
+                border-radius: 50px;
+                color: white;
+            }
+            .tt{
+                background-color: rgb(99, 144, 101);
+                padding: 7px;
+                border-radius: 50px;
+                color: white;
+            }
+            .wp{
+                background-color: rgb(99, 144, 101);
+                padding: 7px;
+                border-radius: 50px;
+                color: white;
+            }
+        }
+    }
+    .medio{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 40px;
+        div{
+            display: flex;
+            flex-direction: column;
+            h3{
+                color: white;
+                padding: 10px 0;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+                padding: 5px;
+            }
+        }
+        .medio-b{
+            text-align: center;
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                
+                input{
+                    background: none;
+                    border: 2px solid white;
+                    padding: 10px 20px;
+                }
+                button{
+                    padding: 10px 20px;
+                    background: white;
+                    color: blueviolet;
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .abajo{
+        padding: 10px;
+        background-color: black;
+        color: white;
+        p{
+            text-align: center;
+        }
+    }
+}
