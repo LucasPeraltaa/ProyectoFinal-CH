@@ -88,7 +88,6 @@ main .informacion .info:hover {
 main .grid-producto {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 20px;
   margin: 30px;
 }
@@ -181,6 +180,48 @@ main .form-contacto .btn-enviar {
   color: white;
   cursor: pointer;
 }
+main .productos {
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  gap: 30px;
+}
+main .productos .card {
+  width: 330px;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.25s;
+}
+main .productos .card:hover {
+  transform: translate(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+main .productos .card img {
+  width: 330px;
+  height: 220px;
+}
+main .productos .card h4 {
+  font-weight: 600;
+}
+main .productos .card p {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 7px;
+}
+main .productos .card p a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #3498db;
+}
 
 @media screen and (max-width: 768px) {
   header {
@@ -193,6 +234,45 @@ main .form-contacto .btn-enviar {
   main .informacion .info {
     margin: 10px;
     padding: 15px;
+  }
+  main .grid-producto {
+    grid-template-columns: repeat(1, 340px);
+  }
+  main .productos {
+    height: 330px;
+    display: contents;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 30px;
+  }
+  main .productos .card {
+    width: 280px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+  }
+  main .productos .card:hover {
+    transform: translate(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  }
+  main .productos .card img {
+    width: 100%;
+  }
+  main .productos .card h4 {
+    font-weight: 600;
+  }
+  main .productos .card p {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 7px;
+  }
+  main .productos .card p a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
   }
 }
 footer {
